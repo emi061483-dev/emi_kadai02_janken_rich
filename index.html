@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶力じゃんけん</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="app">
+    <header class="hero">
+      <h1>記憶じゃんけん</h1>
+      <p>出した手を覚えて、過去の自分に勝とう</p>
+    </header>
+
+    <section class="panel rule-panel" aria-live="polite">
+      <h2>現在のルール:勝負<span id = "playCount">1回目</span></h2>
+      <p id="ruleMessage">まずはコンピューターと勝負しよう</p>
+    </section>
+
+    <section class="panel result-panel">
+      <p id="resultMessage" class="result-message">手を選んでね</p>
+      <div class="result-detail">
+        <p>あなた: <span id="playerHand">-</span></p>
+        <p>コンピューター: <span id="computerHand">-</span></p>
+      </div>
+      <span id="memoryMessage" class="memory-message">10回目からは自分との勝負！</span>
+    </section>
+
+    <section class="hands">
+      <button class="hand-button hand-rock" type="button">
+        <span class="hand-icon">✊</span>
+        <span>グー</span>
+      </button>
+      <button class="hand-button hand-scissors" type="button">
+        <span class="hand-icon">✌️</span>
+        <span>チョキ</span>
+      </button>
+      <button class="hand-button hand-paper" type="button">
+        <span class="hand-icon">✋</span>
+        <span>パー</span>
+      </button>
+    </section>
+    <section class="reset reset-area">
+      <button class="reset reset-button" type="button">
+        <span>勝負回数リセット</span>
+      </button>
+    </section>
+<!-- 
+    <section class="score-grid">
+      <div class="score-card">
+        <span>対戦数</span>
+        <strong id="roundCount">0</strong>
+      </div>
+      <div class="score-card">
+        <span>勝ち</span>
+        <strong id="winCount">0</strong>
+      </div>
+      <div class="score-card">
+        <span>負け</span>
+        <strong id="loseCount">0</strong>
+      </div>
+      <div class="score-card">
+        <span>あいこ</span>
+        <strong id="drawCount">0</strong>
+      </div>
+      <div class="score-card">
+        <span>勝率</span>
+        <strong id="winRate">0%</strong>
+      </div>
+      <div class="score-card">
+        <span>記憶連続成功</span>
+        <strong id="memoryStreak">0</strong>
+      </div>
+      <div class="score-card">
+        <span>記憶最大成功</span>
+        <strong id="memoryMaxStreak">0</strong>
+      </div>
+      <div class="score-card">
+        <span>記憶成功合計</span>
+        <strong id="memoryTotalSuccess">0</strong>
+      </div>
+    </section> -->
+
+  </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/janken.js"></script>
+</body>
+</html>
