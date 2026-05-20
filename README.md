@@ -1,0 +1,1 @@
+# emi_kadai01_janken_rich
